@@ -1,0 +1,195 @@
+@charset "utf-8";
+
+/* 初期設定ここから */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, img,
+small, strong, center, ul, li, main, aside{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+html { height: 100%; }
+body { line-height: 1; height: 100%; font-family: Meiryo, "メイリオ", sans-serif; }
+ol, ul { list-style: none; }
+.clearfix { padding: 20px; }
+.clearfix:after { content:" "; display:block; clear:both; }
+.wrap {
+	padding: 20px;
+	max-width: 1280px;
+	margin: 0 auto;
+	height: 100%;
+	box-sizing: border-box;
+}
+main {
+	width: 908px;
+	min-height: 100%;
+	float: right;
+	background: #c8efea;
+}
+.tc_inner, .tc_txt { padding: 20px; }
+.fit_all { padding: 0 !important; }
+.fit_t { padding-top: 0 !important; }
+.fit_b { padding-bottom: 0 !important; }
+.fit_r { padding-right: 0 !important; }
+.fit_l { padding-left: 0 !important; }
+.htag_r h2, .htag_r h3, .htag_r h4 { width: 100%; text-align: right; height: 20px; font-size: 20px; line-height: 20px; }
+.htag_l h2, .htag_l h3, .htag_l h4 { width: 100%; text-align: left; height: 20px; font-size: 20px; line-height: 20px; }
+.htag_r .tc_txt, .htag_l .tc_txt { overflow: visible; }
+.htag_r .tc_txt img, .htag_l .tc_txt img { margin-top: -40px; }
+.tc_txt {
+	width: 100%;
+	font-size: 110%;
+	line-height: 1.8em;
+	text-align: justify;
+	text-justify: inter-ideograph;
+	overflow: hidden;
+	box-sizing: border-box;
+	color: #183f3f;
+}
+.txt_r_1per2 p img {
+	float: left;
+	margin: 0 20px 20px 0;
+}
+.txt_l_1per2 p img {
+	float: left;
+	margin: 0 20px 20px 0;
+}
+@media screen and (max-width: 1300px) {
+	.wrap { padding: 2%; }
+	main { width: 70%; }
+	.txt_r_1per2 p img { margin: 0 2% 2% 0; max-width: 50%; }
+	.txt_l_1per2 p img { margin: 0 2% 2% 0; max-width: 50%; }
+	.clearfix { padding: 2%; }
+}
+a { text-decoration: none; color: #000; }
+img { display: block; border: 5px solid #183f3f; box-sizing: border-box; }
+.is_1per4 li {
+	float: left;
+	width: 25%;
+	padding: 20px 10px;
+	box-sizing: border-box;
+}
+.is_1per4 li img {
+	 width: 100%;
+}
+
+.detail_span li p span {
+	display: block;
+}
+.detail_span li p span:first-child {
+	text-align: center;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #000;
+}
+.detail_span li p span:last-child {
+	text-align: right;
+}
+.detail_span li p span:last-child a {
+	color: #2ea7e0;
+}
+.detail_span li p span:last-child a:hover {
+	color: #1e92c5;
+}
+@media screen and (max-width: 1300px) {
+	.is_1per4 li {
+		padding: 2% 1%;
+	}
+	.detail_span li p span:first-child {
+		margin-bottom: 2%;
+	}
+}
+/* 初期設定ここまで */
+
+/* サイドバーここから */
+aside {
+	width: 332px;
+	float: left;
+	min-height: 100%;
+	background: #fff;
+}
+aside > div {
+	padding: 10px;
+}
+aside div h1 {
+	width: 100%;
+	text-align: center;
+	background: #1daf9e;
+	padding: 30px 0;
+}
+aside div h1 a {
+	color: #fff;
+}
+aside ul {
+	border-top: 3px solid #1daf9e;
+	margin-top: 10px;
+}
+aside ul li {
+	padding: 10px;
+	background: #1daf9e;
+	margin-top: 10px;
+}
+aside ul li:hover {
+	background: #249dd0;
+}
+aside ul li a {
+	display: block;
+	width: 100%;
+	text-align: center;
+	padding: 30px 0;
+	border: 2px solid #fff;
+	box-sizing: border-box;
+	color: #fff;
+}
+@media screen and (max-width: 1300px) {
+	aside { width: 30%; }
+	aside > div { padding: 1%; }
+	aside ul { margin-top: 1%; }
+	aside ul li {
+		padding: 1%; margin-top: 1%;
+	}
+}
+
+/* サイドバーここまで */
+
+/* mainコンテンツ共通設定ここから */
+main h2 {
+	margin: 20px 0;
+	background: #ca3c6e;
+	height: 50px;
+	line-height: 50px;
+	padding-left: 20px;
+	color: #fff;
+	width: -webkit-calc(100% - 20px);
+	width: calc(100% - 20px);
+	box-sizing: border-box;
+}
+@media screen and (max-width: 1300px) {
+	main h2 {
+		margin: 2% 0;
+		padding-left: 2%;
+		width: 98%;
+	}
+}
+/* mainコンテンツ共通設定ここまで */
+
+
+
+/* 一覧ページここから */
+h3 img { width: 100%; }
+.work main .tc_inner, .private main .tc_inner {
+	padding: 20px 10px;
+}
+.work main .tc_inner h3, .private main .tc_inner h3 {
+	padding: 0 10px;
+}
+@media screen and (max-width: 1300px) {
+	.work main .tc_inner, .private main .tc_inner {
+		padding: 2% 1%;
+	}
+	.work main .tc_inner h3, .private main .tc_inner h3 {
+		padding: 0 1%;
+	}
+}
